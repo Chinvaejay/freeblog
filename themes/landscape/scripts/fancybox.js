@@ -16,7 +16,11 @@ hexo.extend.tag.register('fancybox', function(args) {
   }
 
   var title = args.join(' ');
-  console.log(original, thumbnail)
+
+  if (thumbnail.startsWith('/source')) {
+    thumbnail = 'https://cdn.jsdelivr.net/gh/Chinvaejay/freeblog'+thumbnail
+  }
+  
   return (
     '<a class="fancybox" href="' +
     original +
