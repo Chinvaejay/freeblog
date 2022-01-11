@@ -17,10 +17,10 @@ hexo.extend.tag.register('fancybox', function(args) {
 
   var title = args.join(' ');
 
-  if (thumbnail.startsWith('/source')) {
-    thumbnail = 'https://cdn.jsdelivr.net/gh/Chinvaejay/freeblog'+thumbnail
+  if (title.startsWith('/source')) {
+    thumbnail = 'https://cdn.jsdelivr.net/gh/Chinvaejay/freeblog'+title
   }
-  
+
   return (
     '<a class="fancybox" href="' +
     original +
