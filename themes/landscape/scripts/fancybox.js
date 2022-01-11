@@ -32,7 +32,7 @@ hexo.extend.tag.register('fancybox', function(args) {
     '<img src="' +
     (thumbnail || original) +
     '" alt="' +
-    title +
+    title + '12345' +
     '">'
   );
   '</a>' + (title ? '<span class="caption">' + title + '</span>' : '');
