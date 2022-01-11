@@ -19,8 +19,8 @@ hexo.extend.tag.register('fancybox', function(args) {
 
   console.info(title)
 
-  if (title.startsWith('/source')) {
-    thumbnail = 'https://cdn.jsdelivr.net/gh/Chinvaejay/freeblog'+title
+  if (thumbnail.startsWith('/source')) {
+    thumbnail = 'https://cdn.jsdelivr.net/gh/Chinvaejay/freeblog'+thumbnail
   }
 
   return (
